@@ -62,7 +62,7 @@ This section focuses on data connectivity, data transformation using Power Query
 
 ---
 
-**4. Merge Kind Comparisons (with Example Data)** (Table moved down to be in sequential order)
+**4. Merge Kind Comparisons (with Example Data)**
 
 **Example Data Tables:**
 
@@ -100,7 +100,7 @@ This section focuses on data connectivity, data transformation using Power Query
 
 ---
 
-**5. Popular Pre-processing Techniques (Power Query)** (Table moved down to be in sequential order)
+**5. Popular Pre-processing Techniques (Power Query)**
 
 | Technique                  | Description/Purpose                                                                                                  | When to Use                                                                                                           | Steps to Achieve in Power Query                                                                                     |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -119,7 +119,7 @@ This section focuses on data connectivity, data transformation using Power Query
 
 ---
 
-**6. Capability Comparison Table: DirectQuery vs. Import** (Table moved down to be in sequential order)
+**6. Capability Comparison Table: DirectQuery vs. Import**
 
 | Feature                     | DirectQuery                                     | Import                                          | **Key Difference & Notes for PL-300**                                                                 |
 |------------------------------|-------------------------------------------------|-------------------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -191,7 +191,7 @@ This section covers data modeling best practices, relationships between tables, 
 
 ---
 
-**5. Performance Optimization Techniques (Power BI)** (Table moved down to be in sequential order)
+**5. Performance Optimization Techniques (Power BI)**
 
 | Optimization Area         | Technique                                       | Description/Benefit                                                                                                                                  | Steps to Achieve in Power BI                                                                                                   |
 |--------------------------|-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
@@ -255,7 +255,7 @@ This section focuses on creating effective visualizations, designing reports, an
 
 ---
 
-**4. Visualization Table (with Selection Criteria, Purpose, Limitations & Unique Features):** (Table moved down to be in sequential order)
+**4. Visualization Table (with Selection Criteria, Purpose, Limitations & Unique Features):**
 
 | Visualization Type             | Selection Criteria                                                                      | Purpose                                                                                                  | Limitations / Restrictions                                                                                                 | **Unique Features**                                                                                               |
 |---------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -331,7 +331,7 @@ This section focuses on creating effective visualizations, designing reports, an
 
 ---
 
-**3. Power BI Desktop vs. Power BI Service Capability Comparison** (Table moved down to be in sequential order)
+**3. Power BI Desktop vs. Power BI Service Capability Comparison**
 
 | Feature                     | Power BI Desktop                                  | Power BI Service                                   | **Key Differences & Notes for PL-300**                                                                                             |
 |------------------------------|----------------------------------------------------|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
@@ -389,7 +389,7 @@ This section focuses on Power BI service features, licensing models, collaborati
 
 ---
 
-**4. Capability Comparison Table: Power BI Pro vs. Premium** (Table moved down to be in sequential order)
+**4. Capability Comparison Table: Power BI Pro vs. Premium**
 
 | Feature                     | Power BI Pro                                  | Power BI Premium                                    | **Key Difference & Notes for PL-300**                                                                 |
 |------------------------------|-------------------------------------------------|----------------------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -409,7 +409,7 @@ This section focuses on Power BI service features, licensing models, collaborati
 
 ---
 
-**5. Power BI Desktop vs. Power BI Service Capability Comparison** (Table moved down to be in sequential order)
+**5. Power BI Desktop vs. Power BI Service Capability Comparison**
 
 | Feature                     | Power BI Desktop                                  | Power BI Service                                   | **Key Differences & Notes for PL-300**                                                                                             |
 |------------------------------|----------------------------------------------------|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
@@ -430,7 +430,7 @@ This section focuses on Power BI service features, licensing models, collaborati
 
 ---
 
-**6. Performance Optimization Techniques (Power BI)** (Table moved down to be in sequential order)
+**6. Performance Optimization Techniques (Power BI)**
 
 | Optimization Area         | Technique                                       | Description/Benefit                                                                                                                                  | Steps to Achieve in Power BI                                                                                                   |
 |--------------------------|-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
@@ -453,10 +453,25 @@ This section focuses on Power BI service features, licensing models, collaborati
 | **Data Refresh**         | **Incremental Refresh (Premium)**                 | - For very large datasets, use Incremental Refresh to only refresh changed data partitions, significantly speeding up refresh times. (Premium Feature) | - (Premium Capacity Required) Configure Incremental Refresh in Dataset settings within the Power BI Service. Define parameters for date filtering. |
 |                          | **Optimize Gateway Performance**                  | - If using on-premises data sources, ensure data gateways are properly configured and performant.                                                     | - Review and optimize gateway server resources, network connectivity, and gateway configurations.  Ensure gateway is sized appropriately for workload. |
 
+**7. Security and Row-Level Security (RLS)**
+
+Row-level security (RLS) is a critical feature in Power BI for controlling data access based on user roles. It ensures that users only see the data they are authorized to view, enhancing data security and privacy. RLS is defined within the Power BI Desktop data model using DAX and is enforced by the Power BI Service upon deployment.
+
+**Table 7. Row-Level Security (RLS) in Power BI**
+
+| RLS Aspect                  | Description                                                                                                     | Implementation/Configuration                                                                                                                                          | Considerations/Best Practices                                                                                             |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| **RLS Types**             | **Static RLS:** Roles and filters are predefined and fixed.  **Dynamic RLS:** Filters are applied dynamically based on the *user's* attributes (username, group membership). | **Static:** Define roles and filters directly in Power BI Desktop "Modeling" -> "Manage Roles".  **Dynamic:** Requires DAX measures that leverage functions like `USERPRINCIPALNAME()` or `USERNAME()`. | **Static:** Simpler to set up. Suitable when roles and data access are clearly defined and don't change frequently. **Dynamic:** More flexible and scalable for user-specific filtering. Requires careful DAX design and testing. |
+| **RLS Definition Location** | **Defined in Power BI Desktop data model.** RLS roles and rules are part of the .pbix file.                      | 1.  In Power BI Desktop, go to the "Modeling" tab -> "Manage Roles". 2.  Create roles and define DAX filter expressions for each role on relevant tables.                                     | RLS is part of the data model and travels with the report when published to the Power BI Service.                               |
+| **RLS Enforcement Location**| **Enforced by the Power BI Service.** When users access reports in the Service, RLS rules are applied.              | - After publishing the report, in the Power BI Service, go to Dataset settings -> "Security". - Add users or security groups to the defined RLS roles.                                        | RLS is centrally managed and enforced within the Power BI Service environment.                                         |
+| **DAX for RLS Rules**      | DAX expressions are used to define filter conditions for each role.                                               | - DAX rules typically filter tables based on user attributes or predefined criteria. - Example: `[Region] = USERPRINCIPALNAME()` (Dynamic), `[Category] = "Electronics"` (Static).                  | - DAX rules should be performant. Test DAX rule logic thoroughly. Consider using variables for readability and efficiency. |
+| **Testing RLS**            | Test roles and rules *within Power BI Desktop* to verify correct filter behavior.                                   | 1.  In Power BI Desktop, "Modeling" tab -> "View as Roles". 2.  Select a role to test and see the report as that role would see it.                                                              | - Test each role thoroughly to ensure it filters data as expected and prevents unauthorized access. Test with various users and scenarios. |
+| **RLS Management in Service**| Assign users or security groups to RLS roles *in the Power BI Service* after publishing the report.               | - Dataset settings -> "Security" in Power BI Service. - Add users or security groups to each defined role.                                                                                              | - Manage user role assignments centrally in the Power BI Service. Leverage security groups for easier user management.   |
+| **RLS and Workspaces**      | RLS works *in conjunction* with workspace roles. Workspace roles control access to the *workspace and content*, RLS controls access to *data within datasets*. | - Workspace roles determine *who can access* the workspace and its content (reports, datasets, etc.). - RLS, once configured and roles assigned, determines *what data* users within those workspaces can see. | - Workspace roles and RLS are complementary security layers. Workspace roles manage *access to items*, RLS manages *access to data within items*. Use them together for comprehensive security. |
 
 ---
 
 Remember to:
-*   **Review each table carefully.**
-*   **Focus on understanding the concepts and trade-offs.**
-*   **Practice applying these techniques in Power BI Desktop.**
+*   Review each table carefully
+*   Focus on understanding the concepts and trade-offs
+*   Practice applying these techniques in Power BI Desktop
