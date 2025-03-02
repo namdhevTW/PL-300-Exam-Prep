@@ -10,38 +10,39 @@ This does not substitute for the official Microsoft Learn course. Hence I am req
 
 # Table of Contents
 
-*   [Microsoft PL-300 Exam Study Summary: Data Analyst Associate](#microsoft-pl-300-exam-study-summary-data-analyst-associate)
-    *   [Section 1: Prepare the Data](#section-1-prepare-the-data)
-        *   [Key Concepts (Section 1)](#key-concepts-section-1)
-        *   [Table 1.1: Data Source Types and Considerations](#table-11-data-source-types-and-considerations)
-        *   [Table 1.2: Power Query Parameterization Techniques](#table-12-power-query-parameterization-techniques)
-        *   [Table 1.3: Connection Mode Comparison: Import, DirectQuery, and Live Connection](#table-13-connection-mode-comparison-import-directquery-and-live-connection)
-        *   [Table 1.4: Merge Kind Comparisons](#table-14-merge-kind-comparisons)
-        *   [Table 1.5: Popular Pre-processing Techniques (Power Query)](#table-15-popular-pre-processing-techniques-power-query)
-    *   [Section 2: Model the Data](#section-2-model-the-data)
-        *   [Key Concepts (Section 2)](#key-concepts-section-2)
-        *   [Table 2.1: Relationship Cardinality and Cross-filter Direction](#table-21-relationship-cardinality-and-cross-filter-direction)
-        *   [Table 2.2: Relationship Types: Active vs. Inactive](#table-22-relationship-types-active-vs-inactive)
-        *   [Table 2.3: DAX Evaluation Context: Filter Context vs. Row Context](#table-23-dax-evaluation-context-filter-context-vs-row-context)
-        *   [Table 2.4: Popular DAX Functions and Usage](#table-24-popular-dax-functions-and-usage)
-        *   [Table 2.5: Performance Optimization Techniques (Power BI---Modeling)](#table-25-performance-optimization-techniques-power-bi---modeling)
-        *   [Table 2.6: RLS Types Comparison](#table-26-rls-types-comparison)
-        *   [Table 2.7: RLS Implementation Steps](#table-27-rls-implementation-steps)
-    *   [Section 3: Visualize and Analyze the Data](#section-3-visualize-and-analyze-the-data)
-        *   [Key Concepts (Section 3)](#key-concepts-section-3)
-        *   [Table 3.1: Report Interactivity Features](#table-31-report-interactivity-features)
-        *   [Table 3.2: Filtering Methods in Power BI Reports](#table-32-filtering-methods-in-power-bi-reports)
-        *   [Table 3.3: Accessibility Best Practices for Power BI Reports](#table-33-accessibility-best-practices-for-power-bi-reports)
-        *   [Table 3.4: Visualization Table](#table-34-visualization-table)
-        *   [Table 3.5: Capability Comparison: Power BI Desktop vs. Power BI Service](#table-35-capability-comparison-power-bi-desktop-vs-power-bi-service)
-        *   [Table 3.6: Visual Calculation Types and Use Cases](#table-36-visual-calculation-types-and-use-cases)
-    *   [Section 4: Deploy and Maintain Assets](#section-4-deploy-and-maintain-assets)
-        *   [Key Concepts (Section 4)](#key-concepts-section-4)
-        *   [Table 4.1: Workspace Roles and Permissions](#table-41-workspace-roles-and-permissions)
-        *   [Table 4.2: Data Refresh Types and Configuration](#table-42-data-refresh-types-and-configuration)
-        *   [Table 4.3: Gateway Types: On-premises vs. Personal Gateway](#table-43-gateway-types-on-premises-vs-personal-gateway)
-        *   [Table 4.4: Capability Comparison: Power BI Pro vs. Premium](#table-44-capability-comparison-power-bi-pro-vs-premium)
-        *   [Table 4.5: Performance Optimization Techniques (Power BI---Deployment--Maintenance)](#table-45-performance-optimization-techniques-power-bi---deployment--maintenance)
+ *   [Section 1: Prepare the Data](#section-1-prepare-the-data)
+     *   [Key Concepts (Section 1)](#key-concepts-section-1)
+     *   [Table 1.1: Data Source Types and Considerations](#table-11-data-source-types-and-considerations)
+     *   [Table 1.2: Power Query Parameterization Techniques](#table-12-power-query-parameterization-techniques)
+     *   [Table 1.3: Connection Mode Comparison: Import, DirectQuery, and Live Connection](#table-13-connection-mode-comparison-import-directquery-and-live-connection)
+     *   [Table 1.4: Merge Kind Comparisons](#table-14-merge-kind-comparisons)
+     *   [Table 1.5: Popular Pre-processing Techniques (Power Query)](#table-15-popular-pre-processing-techniques-power-query)
+ *   [Section 2: Model the Data](#section-2-model-the-data)
+     *   [Key Concepts (Section 2)](#section-2-key-concepts)
+     *   [Table 2.1: Relationship Cardinality and Cross-filter Direction](#table-21-relationship-cardinality-and-cross-filter-direction)
+     *   [Table 2.2: Relationship Types: Active vs. Inactive](#table-22-relationship-types-active-vs-inactive)
+     *   [Table 2.3: DAX Evaluation Context: Filter Context vs. Row Context](#table-23-dax-evaluation-context-filter-context-vs-row-context)
+     *   [Table 2.4: Popular DAX Functions and Usage](#table-24-popular-dax-functions-and-usage)
+     *   [Table 2.5: Performance Optimization Techniques (Power BI---Modeling)](#table-25-performance-optimization-techniques-power-bi---modeling)
+     *   [Table 2.6: RLS Types Comparison](#table-26-rls-types-comparison)
+     *   [Table 2.7: RLS Implementation Steps](#table-27-rls-implementation-steps)
+ *   [Section 3: Visualize and Analyze the Data](#section-3-visualize-and-analyze-the-data)
+     *   [Key Concepts (Section 3)](#section-3-key-concepts)
+     *   [Table 3.1: Report Interactivity Features](#table-31-report-interactivity-features)
+     *   [Table 3.2: Filtering Methods in Power BI Reports](#table-32-filtering-methods-in-power-bi-reports)
+     *   [Table 3.3: Accessibility Best Practices for Power BI Reports](#table-33-accessibility-best-practices-for-power-bi-reports)
+     *   [Table 3.4: Visualization Table](#table-34-visualization-table)
+     *   [Table 3.5: Capability Comparison: Power BI Desktop vs. Power BI Service](#table-35-capability-comparison-power-bi-desktop-vs-power-bi-service)
+     *   [Table 3.6: Visual Calculation Types and Use Cases](#table-36-visual-calculation-types-and-use-cases)
+ *   [Section 4: Deploy and Maintain Assets](#section-4-deploy-and-maintain-assets)
+     *   [Key Concepts (Section 4)](#key-concepts-section-4)
+     *   [Dataflows](#dataflows)
+     *   [Table 4.1: Workspace Roles and Permissions](#table-41-workspace-roles-and-permissions)
+     *   [Table 4.2: Data Refresh Types and Configuration](#table-42-data-refresh-types-and-configuration)
+     *   [Table 4.3: Gateway Types: On-premises vs. Personal Gateway](#table-43-gateway-types-on-premises-vs-personal-gateway)
+     *   [Table 4.4: Capability Comparison: Power BI Pro vs. Premium](#table-44-capability-comparison-power-bi-pro-vs-premium)
+     *   [Table 4.5: Performance Optimization Techniques (Power BI---Deployment--Maintenance)](#table-45-performance-optimization-techniques-power-bi---deployment--maintenance)
+     *   [Table 4.6: Dataflow Concepts and Comparison](#table-46-dataflow-concepts-and-comparison)
 
 ---
 
@@ -138,9 +139,21 @@ This section delves into data modeling within Power BI Desktop. It covers creati
 *   **Cross-filter Direction:** Defining how filters propagate through relationships, impacting data context in visualizations.
 *   **Active vs. Inactive Relationships:** Understanding default relationship behavior and when to use inactive relationships for specific analytical scenarios. Activating inactive relationships using DAX functions like `USERELATIONSHIP`.
 *   **DAX Fundamentals:** Introduction to DAX, including calculated columns, measures, and understanding evaluation contexts (Filter Context and Row Context).
+    *   **DAX Variables:**  Using `VAR` to define variables within DAX measures.  Variables improve DAX readability, reduce redundancy, and can enhance performance by storing intermediate calculation results.
+    *   **DAX Iterators:** Understanding iterator functions (`SUMX`, `AVERAGEX`, `FILTER`, `RANKX`, etc.). These functions iterate row by row over a table and evaluate an expression for each row. Use iterators when you need row-level context in your calculation, such as calculating profit per order, or ranking items based on a calculated value.
+    *   **Time Intelligence Functions:** Utilizing DAX time intelligence functions to perform calculations across different time periods.  Examples include:
+        *   **`SAMEPERIODLASTYEAR`**: Compare current period sales to the same period last year: `Sales Last Year = CALCULATE([Total Sales], SAMEPERIODLASTYEAR('Date'[Date]))`
+        *   **`DATEADD`**: Calculate sales for the previous quarter: `Previous Quarter Sales = CALCULATE([Total Sales], DATEADD('Date'[Date], -1, QUARTER))`
+        *   **`CLOSINGBALANCEYTD`**: Calculate year-to-date closing balance for inventory: `YTD Inventory Value = CLOSINGBALANCEYTD('Inventory'[InventoryValue], 'Date'[Date])`
+    *   **DAX Performance Best Practices:**  Writing efficient DAX is crucial for report performance. Key practices include:
+        *   **Prefer Measures over Calculated Columns:** Measures are calculated at query time and are generally more performant than calculated columns, which are materialized in the model and increase model size.
+        *   **Optimize Filter Usage:**  Use `FILTER` functions judiciously, as they can be computationally expensive. Consider alternative approaches using `CALCULATE` and context transitions where possible.
+        *   **Use Variables:** As mentioned, `VAR` can improve performance by avoiding redundant calculations.
+        *   **Understand Evaluation Context:**  Writing effective DAX requires a solid grasp of filter and row context.
 *   **DAX Functions:**  Learning essential DAX functions for aggregation, filtering, time intelligence, and table manipulation.
 *   **Performance Optimization (Modeling):** Techniques to optimize data models for performance, including reducing model size, optimizing relationships, and efficient DAX formulas.
 *   **Row-Level Security (RLS):** Implementing security at the row level to restrict data access based on user roles or attributes.
+*   **Calculated Tables:** Creating tables using DAX expressions. Useful for scenarios like creating parameter tables, date tables, or tables derived from existing data for specific analytical purposes.
 
 ### Table 2.1: Relationship Cardinality and Cross-filter Direction
 
@@ -218,6 +231,10 @@ This section focuses on creating effective visualizations and interactive report
 *   **Report Interactivity:** Implementing features like slicers, filters, drill-through, bookmarks, and buttons to enhance user exploration and data discovery.
 *   **Filtering Techniques:**  Utilizing various filtering methods at visual, page, and report levels. Understanding filter scope and precedence.
 *   **Data Analysis Features:** Leveraging Power BI's built-in analytics features like Quick Insights, AI visuals (Key Influencers, Decomposition Tree, Smart Narrative), and anomaly detection.
+    *   **AI Visuals - Types of Insights:** Power BI AI visuals leverage machine learning to provide automated insights:
+        *   **Key Influencers:**  Identifies factors that drive a specific metric or outcome. For example, "What factors influence customer churn?"
+        *   **Decomposition Tree:**  Allows users to drill down into data across multiple dimensions to understand aggregations and breakdowns. For example, exploring sales by region, then by product category, then by customer segment.
+        *   **Smart Narrative:** Generates automated text summaries of key takeaways and insights from visualizations, providing natural language explanations of data trends and patterns.
 *   **Accessibility in Reports:** Designing reports with accessibility in mind, ensuring usability for users with disabilities.
 *   **Power BI Desktop vs. Service:** Understanding the capabilities and limitations of Power BI Desktop and Power BI Service in terms of report creation, publishing, and collaboration.
 *   **Visual Calculations:** Utilizing built-in visual calculations to perform common analytical calculations directly within visuals without writing explicit DAX measures in some cases.
@@ -270,6 +287,13 @@ This section focuses on creating effective visualizations and interactive report
 | **Table (Matrix)**   | Detailed data presentation, cross-tabulation, numerical and categorical data.         | Display detailed data in tabular format, show cross-tabulations.                  | Not visually engaging, can be overwhelming for large datasets.               | Precise data presentation, detailed view, cross-tabulation, good for specific value lookup. |
 | **Card**             | Single key performance indicator (KPI), highlight a single value.                     | Display a single key metric or value prominently.                               | Limited to single values, not for comparisons or trends.                     | Simple and direct KPI visualization, highlights important single numbers.         |
 | **Gauge Chart**      | Progress towards a goal, performance within a range.                                 | Show progress towards a target, display performance within a predefined range.    | Limited to single metric, can be less precise for detailed data.               | Visual representation of progress, target achievement, intuitive range display.      |
+| **Waterfall Chart**  | Analyzing cumulative effect of sequential positive or negative values.              | Understand the progressive contribution of different factors to a final value (increase or decrease). | Less effective for non-sequential data, can be complex with too many categories. | Clearly visualize the buildup or breakdown of a value, understand variance.     |
+| **Ribbon Chart**     | Ranking changes over time across categories, showing flow between ranks.           | Display changes in rank order for categories over time, visualize category flow.  | Can be cluttered with many categories or complex rank changes.                | Visually track rank shifts over time, understand category evolution and prominence. |
+| **Key Influencers (AI)**| Understanding factors driving a KPI or outcome.                                  | Identify the key factors that influence a selected metric or outcome.           | AI-driven, interpretation required, may not be suitable for all datasets.      | AI-powered insights, automatically surfaces key drivers, interactive exploration of influencers. |
+| **Q&A Visual (AI)**   | Natural language querying for data exploration and visualization.                | Allow users to ask questions in natural language to get instant visualizations. | Limited by the natural language processing capabilities, may not understand complex queries. | User-friendly data exploration via natural language, democratizes data access.      |
+| **Decomposition Tree (AI)**| Hierarchical drill-down analysis to understand data aggregation paths.            | Explore data across multiple dimensions, understand how values aggregate and break down. | Can be complex with deep hierarchies or many dimensions, not ideal for comparisons. | Hierarchical exploration, drill-down analysis, understand data aggregation paths visually. |
+| **Smart Narrative (AI)**| Automatically generates text summaries of visuals and key data points.             | Provide automatic textual insights and summaries of visualizations.             | AI-generated, may require review for accuracy and relevance, can be generic.    | Automatic insights generation, contextual summaries, quick understanding of visuals.  |
+
 
 ### Table 3.5: Capability Comparison: Power BI Desktop vs. Power BI Service
 
@@ -310,8 +334,18 @@ This section covers deploying Power BI assets (reports and datasets) to the Powe
 *   **Data Refresh (Service):** Configuring scheduled and on-demand data refresh in the Power BI Service. Understanding different refresh types (full, incremental, etc.).
 *   **Gateways:** Understanding and choosing between On-premises data gateway and Personal gateway for connecting to on-premises data sources.
 *   **Licensing (Pro vs. Premium):** Differentiating Power BI Pro and Premium licenses and their implications for features, sharing, storage, and scalability.
-*   **Deployment Pipelines:** Utilizing deployment pipelines for managing report lifecycle across development, test, and production environments (Premium feature).
+*   **Deployment Pipelines:** Utilizing deployment pipelines for managing report lifecycle across development, test, and production environments (Premium feature).  Deployment pipelines streamline the process of moving content through different stages (e.g., development, testing, production), enabling better Application Lifecycle Management (ALM) practices and controlled deployments.
 *   **Performance Optimization (Deployment & Maintenance):** Monitoring performance, optimizing refresh schedules, and ensuring efficient gateway configurations.
+
+### Dataflows
+
+*   **Dataflows Introduction:** Dataflows are self-service, cloud-based ETL (Extract, Transform, Load) tools within the Power BI service. They allow you to create reusable data preparation logic that can be used across multiple datasets and reports in Power BI. Dataflows decouple the data preparation process from individual reports, promoting data reusability, consistency, and easier maintenance.
+*   **Benefits of Dataflows:**
+    *   **Data Reusability:** Data preparation logic is defined once and can be reused across multiple reports and datasets, reducing redundant effort.
+    *   **Centralized Data Preparation:**  Dataflows centralize data cleansing, transformation, and shaping, making it easier to manage and maintain data quality.
+    *   **Simplified Report Development:** Report creators can connect to pre-processed, curated data from dataflows, simplifying report development and focusing on visualization and analysis.
+    *   **Advanced Transformations:** Dataflows support advanced transformations and features, including linked entities, computed entities, and AI capabilities.
+    *   **Performance Improvements:** By pre-processing data in dataflows, report performance can be improved as reports query optimized, prepared data.
 
 ### Table 4.1: Workspace Roles and Permissions
 
@@ -368,6 +402,22 @@ This section covers deploying Power BI assets (reports and datasets) to the Powe
 | **Data Reduction Techniques**   | Reduce model size, filter data in Power Query, use aggregations, optimize data types. | Smaller model size, faster processing, improved overall performance.              |
 | **Capacity Planning (Premium)** | Properly plan and size Premium capacity based on workload and usage patterns.    | Ensure adequate resources for optimal performance, avoid capacity bottlenecks.   |
 | **Regular Maintenance**       | Regularly review and maintain datasets, reports, and gateways.                 | Consistent performance, identify and resolve issues promptly, long-term stability. |
+| **Query Reduction Techniques**| Minimize the amount of data queried from source systems. Filter early in Power Query, use aggregations, optimize data types. | Reduced load on source systems, faster data retrieval, improved refresh and query performance. |
+| **Disable Auto Date/Time**  | Disable the auto date/time feature if date hierarchies are not needed.        | Reduced model size, faster refresh times, improved performance, especially with large date tables. |
+
+### Table 4.6: Dataflow Concepts and Comparison
+
+| Feature                  | Dataflows                                          | Power Query in Power BI Desktop                     |
+| ------------------------ | -------------------------------------------------- | --------------------------------------------------- |
+| **Environment**          | Power BI Service (Cloud-based)                      | Power BI Desktop (Local Application)              |
+| **Purpose**              | Reusable Data Preparation, ETL, Data Centralization | Report-Specific Data Preparation, Data Shaping for a single report |
+| **Reusability**          | Highly Reusable across multiple reports/datasets    | Limited Reusability, tied to a specific PBIX file |
+| **Collaboration**        | Designed for collaboration, managed in workspaces   | Less collaborative, primarily individual authoring  |
+| **Refresh**              | Scheduled refresh in Power BI Service               | Manual or scheduled refresh (via Desktop file)        |
+| **Advanced Features**    | Linked Entities, Computed Entities, AI features     | Standard Power Query Transformations                 |
+| **Data Storage**         | Stores prepared data in Azure Data Lake Storage Gen2 (ADLS Gen2) | Data embedded within the Power BI model (.PBIX file) |
+| **Use Cases**            | Enterprise-level data preparation, shared data models, data marts, ETL processes | Report-specific data shaping, quick data exploration, smaller-scale data preparation |
+| **Management & Governance**| Centralized management and governance in Power BI Service | Decentralized, managed per PBIX file                   |
 
 ---
 
