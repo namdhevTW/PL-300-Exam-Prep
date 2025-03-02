@@ -49,5 +49,6 @@ Review these concepts, techniques, and best practices, and utilize the tables fo
      *   [Table 4.5: Performance Optimization Techniques (Power BI---Deployment--Maintenance)](Section%204%20(Deploy%20and%20Maintain%20Assets)/section-4.md#table-45-performance-optimization-techniques-power-bi--deployment--maintenance)
      *   [Table 4.6: Dataflow Concepts and Comparison](Section%204%20(Deploy%20and%20Maintain%20Assets)/section-4.md#table-46-dataflow-concepts-and-comparison)
      *   [Table 4.7: Content Endorsement and Certification Comparison](Section%204%20(Deploy%20and%20Maintain%20Assets)/section-4.md#table-47-content-endorsement-and-certification-comparison)
+     *   [Table 4.8: Power BI Reports vs. Dashboards Comparison]((Deploy%20and%20Maintain%20Assets)/section-4.md#table-48-power-bi-reports-vs-dashboards-comparison)
   
 ---
