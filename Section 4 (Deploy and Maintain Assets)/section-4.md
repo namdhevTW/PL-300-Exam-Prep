@@ -5,12 +5,16 @@ This section covers deploying Power BI assets (reports and datasets) to the Powe
 
 ## Key Concepts (Section 4)
 
-*   **Workspaces:** Understanding workspaces as containers for reports, datasets, and dashboards. Workspace roles and permissions for collaboration and access control.
-*   **Publishing Reports:** Deploying Power BI Desktop reports to the Power BI Service workspaces.
-*   **Data Refresh (Service):** Configuring scheduled and on-demand data refresh in the Power BI Service. Understanding different refresh types (full, incremental, etc.).
+*   **Power BI Service vs. Desktop in Deployment:** Understanding the distinct roles of Power BI Desktop (authoring) and Power BI Service (sharing, collaboration, management, distribution).
+*   **Workspaces:**  Understanding workspaces as containers for reports, datasets, dashboards, and other Power BI assets.  Workspace types (My Workspace vs. Collaboration/Organizational workspaces) and their implications.
+*   **Power BI Content Types:**  Differentiating between Reports, Dashboards, Datasets, Dataflows, and Apps and their respective purposes.
+*   **Power BI Reports vs. Dashboards:**  Understanding the core differences in purpose, interactivity, data sources, creation, sharing, and use cases for Power BI Reports and Dashboards.
+*   **Sharing and Collaboration:** Methods for sharing Power BI content: direct access, app publishing, embedding, sharing to web. Understanding licensing implications for sharing (Pro vs. Premium).
+*   **Data Refresh:**  Setting up and managing data refresh schedules for imported data and considerations for different data source types and connection modes.
 *   **Gateways:** Understanding and choosing between On-premises data gateway and Personal gateway for connecting to on-premises data sources.
 *   **Licensing (Pro vs. Premium):** Differentiating Power BI Pro and Premium licenses and their implications for features, sharing, storage, and scalability.
 *   **Deployment Pipelines:** Utilizing deployment pipelines for managing report lifecycle across development, test, and production environments (Premium feature).  Deployment pipelines streamline the process of moving content through different stages (e.g., development, testing, production), enabling better Application Lifecycle Management (ALM) practices and controlled deployments.
+*   **Content Endorsement and Certification:** Understanding how to endorse and certify Power BI content to promote trusted and high-quality reports and datasets within the organization.
 *   **Performance Optimization (Deployment & Maintenance):** Monitoring performance, optimizing refresh schedules, and ensuring efficient gateway configurations.
 
 ## Dataflows
@@ -114,3 +118,19 @@ Power BI provides features to endorse and certify content to help users identify
 | **Implications**              |  Improves content discoverability, encourages content reuse, helps manage content sprawl to some extent. |  Establishes authoritative data sources, enhances data governance, promotes a culture of data trust and quality, reduces data redundancy and confusion. |
 | **Who Can Do It (Typical)**   | Workspace Admins, Members with Contributor or higher roles. | Designated central authority, IT department, or governance team. |
 | **Licensing**                 |  Power BI Pro or Premium.                                |  Power BI Pro or Premium.                                |
+
+## Table 4.8: Power BI Reports vs. Dashboards Comparison
+
+| Feature             | Power BI Report                                                                   | Power BI Dashboard                                                                     |
+| ------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| **Purpose/Focus**   | Deep data exploration, detailed analysis, answering specific questions, storytelling with data. | High-level overview, monitoring KPIs, quick insights, status monitoring, at-a-glance information. |
+| **Data Source**     | Connects directly to one or more datasets. Can have multiple pages and visuals drawing from the same or related datasets. |  Visualizations ("tiles") are pinned from *one or more reports* (within the same workspace or from other apps). Dashboards themselves *do not directly connect* to datasets. |
+| **Interactivity**   | Highly interactive: slicers, filters, cross-filtering, drill-through, bookmarks, buttons, etc.  Designed for user-driven data exploration. | Less interactive *directly on the dashboard itself*. Tiles are typically linked back to the source reports for interactivity. Some basic dashboard-level filtering is available. |
+| **Drill-down**      | Extensive drill-down capabilities within visuals, pages, and potentially to other reports (drill-through). | Limited drill-down *on the dashboard itself*.  Drill-down typically happens by navigating back to the source report from a tile. |
+| **Filtering**       | Robust filtering capabilities: visual-level, page-level, report-level filters, slicers, filter pane. | Basic dashboard-level filters can be applied to certain tiles, but less granular and extensive than report filtering.  Filters applied in source reports are reflected in pinned tiles. |
+| **Creation Method** | Created and edited in Power BI Desktop or Power BI Service using the report authoring interface. Multi-page layouts are common. | Created and edited in Power BI Service only.  Built by pinning visuals from existing reports. Single-page canvas. |
+| **Content Types**   | Wide variety of visuals, including tables, matrices, charts, AI visuals, custom visuals, and more. Can contain static content like text boxes, images, shapes. | Primarily consists of *visual tiles* pinned from existing reports. Can also include web content, images, text boxes, video tiles, and real-time data streaming tiles. |
+| **Sharing/Scope**   | Shared as Power BI apps or directly with users/groups with specific permissions to the workspace or app. Intended for users who need to analyze and explore data in detail. |  Shared as dashboards with users/groups. Often used for broader audiences who need a high-level overview and quick status updates. Can be made public (embed). |
+| **"Live" vs. Static Data** | Report visuals reflect the *latest data upon refresh* of the underlying dataset. Data is dynamic based on dataset refresh schedule and user interactions. | Dashboard tiles *display data as it was when the tile was pinned or last refreshed*.  While data is updated on a schedule, dashboards are often used for monitoring relatively static KPIs or metrics that don't require second-by-second updates. Real-time dashboards are a separate feature for truly live data. |
+| **Use Cases**       | In-depth data analysis, business intelligence reports, performance reports, operational reports, trend analysis, answering complex business questions, data storytelling, embedded analytics. | Executive dashboards, KPI monitoring, performance tracking, status dashboards, overview for busy users, providing a single pane of glass view across multiple reports, quick access to key metrics. |
+
