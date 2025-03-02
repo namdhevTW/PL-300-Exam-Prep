@@ -10,7 +10,8 @@ This does not substitute for the official Microsoft Learn course. Hence I am req
 
 Review these concepts, techniques, and best practices, and utilize the tables for quick reference and comparison during your exam preparation. Good luck!
 
-**Table of Contents**
+---
+# Table of Contents
 
  *   [Section 1: Prepare the Data](Section%201%20(Prepare%20the%20data)/section-1.md)
      *   [Key Concepts (Section 1)](Section%201%20(Prepare%20the%20data)/section-1.md#key-concepts-section-1)
@@ -48,3 +49,5 @@ Review these concepts, techniques, and best practices, and utilize the tables fo
      *   [Table 4.5: Performance Optimization Techniques (Power BI---Deployment--Maintenance)](Section%204%20(Deploy%20and%20Maintain%20Assets)/section-4.md#table-45-performance-optimization-techniques-power-bi--deployment--maintenance)
      *   [Table 4.6: Dataflow Concepts and Comparison](Section%204%20(Deploy%20and%20Maintain%20Assets)/section-4.md#table-46-dataflow-concepts-and-comparison)
      *   [Table 4.7: Content Endorsement and Certification Comparison](Section%204%20(Deploy%20and%20Maintain%20Assets)/section-4.md#table-47-content-endorsement-and-certification-comparison)
+  
+---
